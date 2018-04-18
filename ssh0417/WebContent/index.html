@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户列表</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+	table tr:nth-child(odd){
+		background: #ccc;
+	}
+</style>
+<script type="text/javascript">
+	$(function(){
+		$.get('showUser.action',function(data){
+			console.log(data)
+		})
+	})	
+</script>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>用户编号</th>
+				<th>用户姓名</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td></td><td></td></tr>
+		</tbody>
+	</table>
+</body>
+</html>
